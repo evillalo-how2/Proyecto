@@ -2,61 +2,70 @@ header
 {
 background-color: darkgray;
 }
-h1
-{
-text-align: center;
--webkit-text-stroke-color:#e0e0e0;
--webkit-text-stroke-width: 0.8px;
-color:darkslateblue;
-background-color:darkgray;
-font-weight: bold;
-}
-
 body
 {
 background-color: darkgrey;
 color: #e0e0e0;
 }
+.Menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 40px;
+}
+.ButtonTable{
+padding:10px 200px ;
+}
 .BotonMenu1
-{
- padding: 20px;
- color:#e0e0e0;
- background-color: darkslateblue;
- padding: 10px 20px;
- border: 2px solid black;
- border-radius: 10px;
+{  
+    font-style: Arial;
+    color:#e0e0e0;
+    background-color: darkslateblue;
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0px 10px ;
 }
 .BotonMenu1:hover
 {
     font-weight: bold;
     transition-duration: 0.3s;
-    scale: 110%
+    scale: 120%
 }
-.ClaseMenu1
-{
-    width: 30%;
-    border-collapse:separate;/* Separacion entre celdas */
-    border-spacing: 10px; /* Espacio entre celdas */
-    text-align: center;
-}
-.Preview
+
+.Camerah2
 {
     text-align: center;
-    font-size: 25px;
-    -webkit-text-stroke-color:black;
-    -webkit-text-stroke-width: 0.3px;
     color:darkslateblue;
-    background-color:darkgray;
+    -webkit-text-stroke-width:.8px ;
+    -webkit-text-stroke-color: black;
+    font-style: sans-serif, Arial;
     font-weight: bold;
 }
-.PreviewN
+.CameraGrid:grid
+{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 50px;
+    width: 50%;
+    margin: auto;
+}   
+.Camera
 {
-    text-align: center;
-    font-size: 25px;
-    -webkit-text-stroke-color:black;
-    -webkit-text-stroke-width: 0.3px;
-    color:darkslateblue;
-    background-color:darkgray;
-    font-weight: bold; 
+    background-color: darkgrey;
+    color: #e0e0e0;
+    border-radius: 10px;
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    gap: 30px;
 }
--->
+.Camera:hover
+{
+    background-size: 5px 5px;
+background-color: darkslateblue;
+}
+
